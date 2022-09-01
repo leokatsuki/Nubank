@@ -6,7 +6,7 @@ header{
     transition: .5s ease;
 
     position: fixed;
-    z-index: 999;
+    z-index: 800;
 }
 
 .active-header{
@@ -242,21 +242,15 @@ header{
     height: 100vh;
 
     background-color: $white-normal;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0;
-    pointer-events: none;
-
+    
     transform: translate3d(0, -100px, 0);
-    transition: 1s ease;
+    display: none;
 }
 
 .active-menu-mobile{
-    opacity: 1;
-    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-list-mobile{

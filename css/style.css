@@ -950,7 +950,7 @@ header {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   position: fixed;
-  z-index: 999;
+  z-index: 800;
 }
 
 .active-header {
@@ -1221,6 +1221,12 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: #f7f2fa;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+  display: none;
+}
+
+.active-menu-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1230,17 +1236,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: translate3d(0, -100px, 0);
-          transform: translate3d(0, -100px, 0);
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-.active-menu-mobile {
-  opacity: 1;
-  pointer-events: all;
 }
 
 .nav-list-mobile {
@@ -1320,7 +1315,6 @@ header {
           transform-origin: center center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  background-color: red;
   -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
           animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }

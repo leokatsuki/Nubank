@@ -44,7 +44,7 @@ function ShowDropdown3(event){
     dropdownMenu3.classList.toggle('active-dropdown-menu');
 }
 
-function RemoveDropdown(){
+function RemoveDropdown (){
     dropdownMenu1.classList.remove('active-dropdown-menu');
     dropdownMenu2.classList.remove('active-dropdown-menu');
     dropdownMenu3.classList.remove('active-dropdown-menu');
