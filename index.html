@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <script src="js/svg-inject.min.js"></script>
 </head>
 <body>
@@ -138,7 +140,7 @@
         </div> 
     </section>
 
-    <!-- ===== SECTION PEOPLE ===== -->
+    <!-- ===== SECTION BEST ===== -->
     <section class="container">
         <div class="best px-5 py-7">
             <div class="flex-item-auto">
@@ -164,7 +166,66 @@
         </div>
     </section>
 
+    <!-- ===== SECTION SWIPER ===== -->
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus neque magni laborum odit autem, quasi reprehenderit corporis nemo asperiores totam harum deleniti ut, qui quos aut, ducimus eligendi magnam.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4 class="my-1">Anna Keller</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates quod fuga tempora sunt soluta ut illum? Aperiam voluptatem quia impedit hic, vero natus alias quo omnis accusantium et iure.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4 class="my-1">Marcela Souza</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id vitae harum ratione quis sit quo nobis minima illo officiis eveniet asperiores consequatur dolore laudantium, debitis eaque iusto saepe velit? Id.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4 class="my-1">Giovanna Castro</h4>
+                    <p class="my-1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam eius nam et aperiam, dolores ipsam harum quod fuga dolore maxime, animi expedita, libero voluptatibus explicabo odit exercitationem dignissimos veniam!</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4 class="my-1">Tiago Monteiro</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, at. Ex fuga, quisquam possimus quidem harum ut laudantium ipsam sint officia exercitationem eum incidunt accusamus consectetur, mollitia nam nihil esse?</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section> 
+
+
     <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </script>
 
 </body>
 </html>
