@@ -20,9 +20,9 @@
     }
 }
 
-.bg-icon-mobile{
+.bg-icon-time{
     &::after{
-        background-image: url(../../svg/icon-mobile.svg);
+        background-image: url(../../svg/icon-time.svg);
         background-size: cover;
         transition: .5s ease;
 
@@ -38,9 +38,9 @@
     }
 }
 
-.bg-icon-mobile{
+.bg-icon-config{
     &::after{
-        background-image: url(../../svg/icon-mobile.svg);
+        background-image: url(../../svg/icon-config.svg);
         background-size: cover;
         transition: .5s ease;
 
@@ -56,9 +56,9 @@
     }
 }
 
-.bg-icon-mobile{
+.bg-icon-contactless{
     &::after{
-        background-image: url(../../svg/icon-mobile.svg);
+        background-image: url(../../svg/icon-contactless.svg);
         background-size: cover;
         transition: .5s ease;
 
