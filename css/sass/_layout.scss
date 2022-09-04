@@ -273,6 +273,33 @@ footer{
     background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include responsive(s){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer-child{
+    a:hover{
+        color: $white-light;
+    }
+}
+
 .bt-purple{
     border-top: 1px solid $secondary-light;
+}
+
+.svg-size{
+    padding: 128px;
+
+    @include responsive(s){
+        padding: 38px;
+    }
 }
